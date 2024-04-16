@@ -1,0 +1,24 @@
+a, b = input().split()
+a = int(a)
+b = int(b)
+
+a = 12 - a
+b = 60 - b
+
+if a == 12:
+    a = 0
+
+if b == 60:
+    b = 0
+
+if a < 10:
+    a = str(a).zfill(2)
+else:
+    a = str(a)
+
+if b < 10:
+    b = str(b).zfill(2)
+else:
+    b = str(b)
+
+print("{}:{}".format(a, b))
